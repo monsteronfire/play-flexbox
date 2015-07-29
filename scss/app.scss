@@ -58,8 +58,18 @@ table {
 .flex-item {
 	flex-grow: 1;
 	width: 200px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 10px;
+	text-align: center;
 }
 
 .flex-item img {
 	width: 100%;
+}
+
+.flex-item dl dt dfn {
+	font-style: italic;
+	font-weight: bold;
 }
