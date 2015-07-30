@@ -47,11 +47,17 @@ table {
 	border-spacing: 0;
 }
 
-/** Page Styles **/
+/** Page Styles - index.html **/
 
 .flex-container {
 	display: flex;
 	justify-content: space-around;
+	/*flex-wrap: wrap;*/
+}
+
+.flex-container-1 {
+	/*display: flex;
+	justify-content: space-around;*/
 	/*flex-wrap: wrap;*/
 }
 
@@ -65,16 +71,21 @@ table {
 	text-align: center;
 }
 
-.flex-item img {
+.flex-item-1 img {
 	width: 100%;
 	margin-bottom: 10px;
 }
 
-.flex-item dl dt {
+.flex-item-1 dl dt {
 	margin-bottom: 10px;
 }
 
-.flex-item dl dt dfn {
+.flex-item-1 dl dt dfn {
 	font-style: italic;
 	font-weight: bold;
+}
+
+/** Page Styles - index-2.html **/
+.flex-container-2 {
+	display: flex;
 }
