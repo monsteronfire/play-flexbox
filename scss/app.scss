@@ -55,12 +55,6 @@ table {
 	/*flex-wrap: wrap;*/
 }
 
-.flex-container-1 {
-	/*display: flex;
-	justify-content: space-around;*/
-	/*flex-wrap: wrap;*/
-}
-
 .flex-item {
 	flex-grow: 1;
 	width: 200px;
@@ -88,4 +82,56 @@ table {
 /** Page Styles - index-2.html **/
 .flex-container-2 {
 	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-container-2 > * {
+	padding: 10px;
+	flex: 1 100%;
+}
+
+.flex-container-2 header {
+	background-color: lighten(salmon, 10%);
+}
+
+.flex-container-2 footer {
+	background-color: darken(salmon, 10%);
+}
+
+.flex-container-2 article {
+	background-color: gold;
+}
+
+.aside-1 {
+	background: darken(turquoise, 20%);
+}
+
+.aside-2 {
+	background: turquoise;
+}
+
+/** Media Queries - Page 2 Styles **/
+@media all and (min-width: 600px) {
+ 	.aside {
+ 		flex: 1 auto;
+ 	}
+}
+
+@media all and (min-width: 800px) {
+	.flex-container-2 .main {
+		flex: 3 0px;
+		order: 2;
+	}
+
+	.flex-container-2 .aside-1 {
+		order: 1;
+	}
+
+	.flex-container-2 .aside-2 {
+		order: 3;
+	}
+
+	.flex-container-2 footer {
+		order: 4;
+	}
 }
