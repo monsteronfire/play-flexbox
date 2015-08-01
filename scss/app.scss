@@ -51,8 +51,11 @@ table {
 
 .flex-container {
 	display: flex;
-	justify-content: space-around;
 	/*flex-wrap: wrap;*/
+}
+
+.flex-container-1 {
+	justify-content: space-around;
 }
 
 .flex-item {
@@ -83,6 +86,7 @@ table {
 .flex-container-2 {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 .flex-container-2 > * {
@@ -110,6 +114,24 @@ table {
 	background: turquoise;
 }
 
+/** Pages Styles - index-3.html **/
+.flex-container-3 {
+	background-color: deepskyblue;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.flex-container-3 a {
+	text-decoration: none;
+	display: block;
+	padding: 16px;
+	color: #FFFFFF;
+}
+
+.flex-container-3 {
+	list-style: none;
+}
+
 /** Media Queries - Page 2 Styles **/
 @media all and (min-width: 600px) {
  	.aside {
@@ -133,5 +155,23 @@ table {
 
 	.flex-container-2 footer {
 		order: 4;
+	}
+}
+
+@media all and (max-width: 800px){
+	/** Flex Container 3 **/
+	.flex-container-3 {
+		justify-content: space-around;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.flex-container-3 {
+		flex-flow: column wrap;
+		padding: 0;
+	}
+
+	.flex-container-3 a {
+		text-align: center;
 	}
 }
