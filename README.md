@@ -1,6 +1,6 @@
 # play-flexbox
 -----
-Using all the elements in the HTML5 Element Index
+Using elements in the HTML5 Element Index
 http://html5doctor.com/
 
 Experimenting with Flexbox
